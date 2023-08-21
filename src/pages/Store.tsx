@@ -1,7 +1,11 @@
 //import React from 'react'
+import storeItems from "../data/items.json"
 
 export function Store() {
   return (
-    <h1>Store</h1>
+    <>
+      <h1>Store</h1>
+      
+    </>
   )
 }
