@@ -18,7 +18,7 @@ export function CartItem({id, quantity}: CartItemProps) {
             <img src={item.imgUrl} 
                 style={{
                     width: "125px",
-                    height: "",
+                    height: "75px",
                     objectFit: "cover"
                 }} 
             />
