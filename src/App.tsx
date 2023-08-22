@@ -4,11 +4,13 @@ import {Home} from "./pages/Home"
 import {Store} from "./pages/Store"
 import {About} from "./pages/About"
 import {Navbar} from "./components/Navbar"
+import { ShoppingCartProvider } from "./context/ShoppingCartContext"
 
 function App() {
   return (
     <>
-      <Navbar/>
+    <ShoppingCartProvider> {/*could not the self close tag */}
+    <Navbar />
       <Container className="mb-4">
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -17,6 +19,7 @@ function App() {
 
         </Routes>
       </Container>
+      </ShoppingCartProvider>
     </>
   )
 }
